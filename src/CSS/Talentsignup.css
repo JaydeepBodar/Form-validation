@@ -1,0 +1,18 @@
+.main-wrapper .form-wrapper .nav-links .talent-fanpage {
+    font-weight: 500;
+    text-decoration:none;
+    color:#fff ;
+    padding-left: 10px;
+}
+
+.main-wrapper .form-wrapper .nav-links .talent-talentpage{
+    color: #000;
+    background-color: #42ff8a;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}

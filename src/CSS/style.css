@@ -1,0 +1,259 @@
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+/* Set core body defaults */
+body {
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	overflow-x: hidden;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+	list-style: none;
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*------- Theme CSS ----------*/
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 25px;
+	color: #000;
+	font-weight: 400;
+}
+
+a {
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease
+}
+
+a:hover {
+	text-decoration: none;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease
+}
+
+img {
+	height: auto;
+	max-width: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	line-height: 1.2;
+	margin: 0 0 10px;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+p {
+	margin: 0 0 8px;
+}
+
+.button:focus,
+input:focus,
+.form-control:focus,
+button:focus {
+	outline: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+}
+/* form-css */
+.main-wrapper{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color: #000;
+    height: auto;
+    padding: 45px 0;
+}
+.main-wrapper .form-wrapper{
+    width:100%;
+    max-width:600px;
+    margin:0 auto;
+    background-color:#212121;
+    padding:20px 50px;
+    margin: 45px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.main-wrapper .form-detail .form-control{
+    background-color: transparent;
+    border: 1px solid #42ff8a;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: #fff;
+}
+.main-wrapper .form-detail {
+    width:100%;
+    max-width:300px;
+    margin:0 auto;
+}
+.main-wrapper .form-title{
+    text-align: center;
+    color: #fff;
+    padding: 20px 0 10px;
+}
+.main-form .form-group label{
+    margin-bottom: 8px;
+}
+.main-form .form-group{
+    color:#fff;
+    margin-bottom:10px;
+}
+.main-form .form-group .error{
+    font-size: 12px;
+    color: red;
+}
+.main-form .form-condition span{
+    color: #42ff8a;
+    cursor: pointer;
+}
+.main-form .form-condition{
+    color: #fff;
+    padding-left: 10px;
+}
+.main-wrapper .form-wrapper .nav-links{
+    background-color: #000;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -moz-border-radius: 20px;
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-form .submit-btn .button{
+    background-color: #42ff8a;
+    color: #000;
+    min-width: 200px;
+    outline: none;
+    text-align: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    border: 1px solid #42ff8a;
+    padding: 8px 0;
+}
+.main-form .submit-btn .button:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #42ff8a;
+}
+.main-form .submit-btn{
+    text-align: center;
+}
+.main-form .form-detail .form-condition-check{
+    font-size: 12px;
+    text-align: center;
+    padding: 20px 0;
+}
+input[type=checkbox]:checked{
+    background-color: #42ff8a !important;
+}
+/* media-Query */
+@media screen and (max-width:640px) {
+    .main-wrapper .form-wrapper {
+        max-width: 400px;
+    }
+    .main-wrapper .form-title {
+        font-size: 25px;
+    }
+    .main-wrapper .form-wrapper .nav-links a {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:425px){
+    .main-wrapper .form-wrapper{
+        max-width: 330px;
+        padding: 12px;
+    }
+    .main-wrapper .form-wrapper .nav-links{
+        max-width: 250px;
+    }
+}
